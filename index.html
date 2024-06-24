@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daanish Iskandar's Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom styles for the biodata page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(90deg, rgba(44, 62, 80, 0.9) 0%, rgba(44, 62, 80, 0.7) 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-family: 'Georgia', serif;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-family: 'Georgia', serif;
+        }
+
+        h3 {
+            color: #34495e;
+            font-family: 'Georgia', serif;
+        }
+
+        .biodata-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .biodata-text {
+            flex: 1;
+        }
+
+        .biodata-photo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .biodata-photo img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-player {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, rgba(44, 62, 80, 0.9) 0%, rgba(44, 62, 80, 0.7) 100%);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer .contact-info,
+        footer .social-media {
+            flex: 1;
+            text-align: center;
+        }
+
+        footer .contact-info p {
+            margin: 5px 0;
+        }
+
+        footer .social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        footer .social-media a:hover {
+            color: #ffeb3b;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daanish Iskandar Bin Mohd Firdaus Mohan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Biodata</a></li>
+                <li><a href="working_experience_and_achievement.html">Working Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="biodata-container" id="biodata">
+            <div class="biodata-text">
+                <h2>Biodata</h2>
+                <p>My age is 21 years old. I'm from Klang, Selangor.</p>
+                <p>My address is 18, Lrg Pending 1B, Bandar Puteri Klang.</p>
+                <p>I'm currently studying at UiTM Rembau.</p>
+            </div>
+            <div class="biodata-photo">
+                <img src="image/Homepage%202.jpeg" alt="Your Photo">
+            </div>
+        </section>
+        <div class="audio-player">
+            <audio controls>
+                <source src="audio/30%20Seconds%20to%20Mars%20-%20The%20Kill.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:daanishiskandar@gmail.com">daanishiskandar@gmail.com</a></p>
+            <p>Phone: <a href="tel:0164476912">0164476912</a></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/daanish.iskndar" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/DaanishIskandar" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
